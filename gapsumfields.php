@@ -80,6 +80,25 @@ function gapsumfields_civicrm_sumfields_definitions(&$custom) {
     'trigger_table' => 'civicrm_contribution',
     'optgroup' => 'fundraising',
   );
+  $custom['fields']['contribution_count_2020'] = array(
+    'label' => ts('Count of Donations in 2020'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        count(*)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2020'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
 
 }
 

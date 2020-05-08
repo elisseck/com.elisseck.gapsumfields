@@ -99,6 +99,482 @@ function gapsumfields_civicrm_sumfields_definitions(&$custom) {
     'trigger_table' => 'civicrm_contribution',
     'optgroup' => 'fundraising',
   );
+  $custom['fields']['contribution_count_2021'] = array(
+    'label' => ts('Count of Donations in 2021'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        count(*)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2021'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_count_2022'] = array(
+    'label' => ts('Count of Donations in 2022'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        count(*)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2022'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_count_2023'] = array(
+    'label' => ts('Count of Donations in 2023'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        count(*)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2023'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_count_2024'] = array(
+    'label' => ts('Count of Donations in 2024'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        count(*)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2024'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_count_2025'] = array(
+    'label' => ts('Count of Donations in 2025'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        count(*)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2025'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_count_2026'] = array(
+    'label' => ts('Count of Donations in 2026'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        count(*)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2026'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_count_2027'] = array(
+    'label' => ts('Count of Donations in 2027'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        count(*)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2027'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_count_2028'] = array(
+    'label' => ts('Count of Donations in 2028'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        count(*)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2028'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_count_2029'] = array(
+    'label' => ts('Count of Donations in 2029'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        count(*)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2029'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_count_2030'] = array(
+    'label' => ts('Count of Donations in 2030'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        count(*)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2030'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+
+  $custom['fields']['contribution_sum_2016'] = array(
+    'label' => ts('Sum of Donations in 2016'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2016'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2017'] = array(
+    'label' => ts('Sum of Donations in 2017'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2017'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2018'] = array(
+    'label' => ts('Sum of Donations in 2018'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2018'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2019'] = array(
+    'label' => ts('Sum of Donations in 2019'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2019'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2020'] = array(
+    'label' => ts('Sum of Donations in 2020'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2020'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2021'] = array(
+    'label' => ts('Sum of Donations in 2021'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2021'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2022'] = array(
+    'label' => ts('Sum of Donations in 2022'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2022'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2023'] = array(
+    'label' => ts('Sum of Donations in 2023'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2023'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2024'] = array(
+    'label' => ts('Sum of Donations in 2024'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2024'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2025'] = array(
+    'label' => ts('Sum of Donations in 2025'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2025'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2026'] = array(
+    'label' => ts('Sum of Donations in 2026'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2026'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2027'] = array(
+    'label' => ts('Sum of Donations in 2027'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2027'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2028'] = array(
+    'label' => ts('Sum of Donations in 2028'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2028'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2029'] = array(
+    'label' => ts('Sum of Donations in 2029'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2029'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
+  $custom['fields']['contribution_sum_2030'] = array(
+    'label' => ts('Sum of Donations in 2030'),
+    'data_type' => 'Int',
+    'html_type' => 'Text',
+    'weight' => '15',
+    'text_length' => '255',
+    'trigger_sql' => "(
+      SELECT
+        SUM(total_amount)
+      FROM
+        civicrm_contribution c
+      WHERE
+        c.contact_id = NEW.contact_id
+        AND c.financial_type_id = 1
+        AND YEAR(c.receive_date) = '2030'
+    )",
+    'trigger_table' => 'civicrm_contribution',
+    'optgroup' => 'fundraising',
+  );
 
 }
 
